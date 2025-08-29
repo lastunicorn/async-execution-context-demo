@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Web;
 using System.Web.Http;
 
 namespace ExecutionContextDemo.Controllers
@@ -6,9 +8,16 @@ namespace ExecutionContextDemo.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public async Task<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2" };
+            HttpContext before = HttpContext.Current;
+
+            ValuesUseCase valuesUseCase = new ValuesUseCase();
+            IEnumerable<string> values = await valuesUseCase.Execute();
+
+            HttpContext after = HttpContext.Current;
+
+            return values;
         }
 
         // GET api/values/5
