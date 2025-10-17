@@ -13,9 +13,10 @@ public class DummyController : Controller
         HttpContext before = HttpContext;
 
         ValuesUseCase valuesUseCase = new();
-        IEnumerable<string> values = await valuesUseCase.Execute();
+        IEnumerable<string> values = await valuesUseCase.Execute()
+            .ConfigureAwait(false);
 
-        HttpContext after = HttpContext;
+        HttpContext after = HttpContext; // this still has the correct value.
 
         return values;
     }

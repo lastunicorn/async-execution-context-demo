@@ -13,9 +13,10 @@ namespace DustInTheWind.ExecutionContextDemo.Controllers
             HttpContext before = HttpContext.Current;
 
             ValuesUseCase valuesUseCase = new ValuesUseCase();
-            IEnumerable<string> values = await valuesUseCase.Execute();
+            IEnumerable<string> values = await valuesUseCase.Execute()
+                .ConfigureAwait(false);
 
-            HttpContext after = HttpContext.Current;
+            HttpContext after = HttpContext.Current; // this is null
 
             return values;
         }
