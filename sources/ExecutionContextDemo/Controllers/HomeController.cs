@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace ExecutionContextDemo.Controllers
+namespace DustInTheWind.ExecutionContextDemo.Controllers
 {
     public class HomeController : Controller
     {

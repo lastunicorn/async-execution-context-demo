@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 
-namespace ExecutionContextDemo.Controllers
+namespace DustInTheWind.ExecutionContextDemo.Controllers
 {
-    public class ValuesController : ApiController
+    public class DummyController : ApiController
     {
         // GET api/values
         public async Task<IEnumerable<string>> Get()
@@ -18,27 +18,6 @@ namespace ExecutionContextDemo.Controllers
             HttpContext after = HttpContext.Current;
 
             return values;
-        }
-
-        // GET api/values/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
         }
     }
 }

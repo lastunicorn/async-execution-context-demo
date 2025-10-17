@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace ExecutionContextDemo.Areas.HelpPage.ModelDescriptions
+namespace DustInTheWind.ExecutionContextDemo.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using ExecutionContextDemo.Areas.HelpPage.ModelDescriptions;
+using DustInTheWind.ExecutionContextDemo.Areas.HelpPage.ModelDescriptions;
 
-namespace ExecutionContextDemo.Areas.HelpPage.Models
+namespace DustInTheWind.ExecutionContextDemo.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

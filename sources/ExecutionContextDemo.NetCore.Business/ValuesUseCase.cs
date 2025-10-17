@@ -1,4 +1,4 @@
-﻿namespace ExecutionContextDemo.Controllers;
+﻿namespace DustInTheWind.ExecutionContextDemo.NetCore.Business;
 
 public class ValuesUseCase
 {
@@ -7,11 +7,11 @@ public class ValuesUseCase
         return await GetValues().ConfigureAwait(false);
     }
 
-    private Task<IEnumerable<string>> GetValues()
+    private static Task<IEnumerable<string>> GetValues()
     {
         return Task.Run(() =>
         {
-            string[] strings = new string[] { "value1", "value2" };
+            string[] strings = ["value1", "value2"];
             return strings as IEnumerable<string>;
         });
     }

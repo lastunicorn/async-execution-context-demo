@@ -1,6 +1,6 @@
-@ExecutionContextDemo.NetCore_HostAddress = http://localhost:5283
+@DustInTheWind.ExecutionContextDemo.NetCore_HostAddress = http://localhost:5283
 
-GET {{ExecutionContextDemo.NetCore_HostAddress}}/weatherforecast/
+GET {{DustInTheWind.ExecutionContextDemo.NetCore_HostAddress}}/dummy/
 Accept: application/json
 
 ###

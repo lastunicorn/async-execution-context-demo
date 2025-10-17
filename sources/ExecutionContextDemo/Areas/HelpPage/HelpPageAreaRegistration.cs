@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace ExecutionContextDemo.Areas.HelpPage
+namespace DustInTheWind.ExecutionContextDemo.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

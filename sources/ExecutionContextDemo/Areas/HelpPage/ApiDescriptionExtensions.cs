@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace ExecutionContextDemo.Areas.HelpPage
+namespace DustInTheWind.ExecutionContextDemo.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

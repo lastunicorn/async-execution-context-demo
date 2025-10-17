@@ -7,8 +7,8 @@
     <ProjectGuid>{6486AB75-B51E-48B3-975A-C8360DD7AC4E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExecutionContextDemo.Business</RootNamespace>
-    <AssemblyName>ExecutionContextDemo.Business</AssemblyName>
+    <RootNamespace>DustInTheWind.ExecutionContextDemo.Business</RootNamespace>
+    <AssemblyName>DustInTheWind.ExecutionContextDemo.Business</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

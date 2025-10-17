@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ExecutionContextDemo.Controllers
+namespace DustInTheWind.ExecutionContextDemo.Controllers
 {
     public class ValuesUseCase
     {
@@ -10,7 +10,7 @@ namespace ExecutionContextDemo.Controllers
             return await GetValues().ConfigureAwait(false);
         }
 
-        private Task<IEnumerable<string>> GetValues()
+        private static Task<IEnumerable<string>> GetValues()
         {
             return Task.Run(() =>
             {

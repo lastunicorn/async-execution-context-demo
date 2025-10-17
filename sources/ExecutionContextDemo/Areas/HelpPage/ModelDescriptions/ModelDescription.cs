@@ -1,6 +1,6 @@
 using System;
 
-namespace ExecutionContextDemo.Areas.HelpPage.ModelDescriptions
+namespace DustInTheWind.ExecutionContextDemo.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.
